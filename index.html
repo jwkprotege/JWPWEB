@@ -114,6 +114,11 @@
       padding: 30px;
       transition: all 0.3s ease;
     }
+    .why-item img {
+      height: 70px;
+      margin-bottom: 15px;
+      display: inline-block;
+    }
     .why-item:hover {
       background-color: var(--green);
       color: #fff;
@@ -146,6 +151,19 @@
     .service-card img {
       height: 80px;
       margin-bottom: 20px;
+    }
+
+    /* Services illustration row under the main Services heading */
+    .services-illustration img {
+      height: 60px;
+      margin: 0 12px;
+      filter: grayscale(100%);
+      transition: filter 0.25s ease, transform 0.25s ease;
+      vertical-align: middle;
+    }
+    .services-illustration img:hover {
+      filter: grayscale(0);
+      transform: translateY(-4px);
     }
 
     /* CLIENTS */
@@ -268,18 +286,21 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="why-item">
+            <img src="assets/images/LOGO KDN.png" alt="Trusted & Licensed icon" class="why-icon">
             <h5>Trusted & Licensed</h5>
             <p>Registered under the Ministry of Home Affairs (KDN) with a proven record of reliability.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-item">
+            <img src="assets/images/GUARD ICON.png" alt="Professional Guards icon" class="why-icon">
             <h5>Professional Guards</h5>
             <p>Our team comprises well-trained, uniformed, and courteous security professionals.</p>
           </div>
         </div>
         <div class="col-md-4">
           <div class="why-item">
+            <img src="assets/images/icon-cctv.png" alt="24/7 Monitoring icon" class="why-icon">
             <h5>24/7 Monitoring</h5>
             <p>Round-the-clock surveillance and support with rapid response capability.</p>
           </div>
@@ -295,14 +316,14 @@
       <div class="row g-4">
         <div class="col-md-3">
           <div class="service-card">
-            <img src="assets/images/icon-guard.png" alt="">
+            <img src="assets/images/GUARD ICON.png" alt="Armed & Unarmed Guards icon">
             <h5>Armed & Unarmed Guards</h5>
             <p>Professional guards ensuring safety and discipline in every environment.</p>
           </div>
         </div>
         <div class="col-md-3">
           <div class="service-card">
-            <img src="assets/images/icon-patrol.png" alt="">
+            <img src="assets/images/featured-02.png" alt="Mobile Patrol Units icon">
             <h5>Mobile Patrol Units</h5>
             <p>Visible presence and fast incident response for added protection.</p>
           </div>
@@ -316,7 +337,7 @@
         </div>
         <div class="col-md-3">
           <div class="service-card">
-            <img src="assets/images/icon-event.png" alt="">
+            <img src="assets/images/featured-04.png" alt="Event Security icon">
             <h5>Event Security</h5>
             <p>Specialized team managing public or private event crowd control efficiently.</p>
           </div>
