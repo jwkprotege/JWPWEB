@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JW Protection Sdn Bhd</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ORIGINAL CSS -->
+    <link rel="stylesheet" href="templatemo-nexaverse.css">
+    <!-- Testimonials CSS (minimal, responsive) -->
+    <style>
+        .testimonials-grid{max-width:1000px;margin:20px auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0 18px}
+        .testimonial-card{background:rgba(255,255,255,0.03);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+        .testimonial-text{font-style:italic;margin-bottom:12px;color:#e6e9ec}
+        .testimonial-meta{font-weight:600;color:#c7cbd0;font-size:0.95rem}
+        @media (max-width:900px){.testimonials-grid{grid-template-columns:repeat(2,1fr)}}
+        @media (max-width:480px){.testimonials-grid{grid-template-columns:1fr;padding:0 12px}}
+    </style>
+    <!-- Map CSS (minimal, responsive) -->
+    <style>
+        .contact-map{max-width:900px;margin:18px auto;border-radius:8px;overflow:hidden}
+        .contact-map iframe{width:100%;height:380px;border:0;display:block}
+        @media (max-width:480px){.contact-map iframe{height:260px}}
+    </style>
+    <!-- About CSS (two-column, responsive) -->
+    <style>
+        .about-grid{max-width:1000px;margin:20px auto;display:grid;grid-template-columns:1fr 320px;gap:24px;padding:0 18px;align-items:start}
+        .about-bio p{margin-bottom:12px;color:#e6e9ec;line-height:1.6}
+        .about-list{margin-left:18px;color:#c7cbd0}
+        .about-credentials{background:rgba(255,255,255,0.02);padding:16px;border-radius:8px}
+        .about-credentials h4{margin-top:0;margin-bottom:8px}
+        .about-cta{display:inline-block;margin-top:12px;padding:10px 14px;background:linear-gradient(90deg,#00f0ff,#ff00d4);color:#061220;border-radius:6px;text-decoration:none;font-weight:600}
+        @media (max-width:900px){.about-grid{grid-template-columns:1fr}}
+        @media (max-width:480px){.about-cta{width:100%;text-align:center}}
+    </style>
+</head>
+
+<body>
+
+<!-- Loading Screen -->
+<div class="loading-screen" id="loadingScreen">
+    <div class="loader-ring"></div>
+    <div class="loading-text">Initializing Security System...</div>
+</div>
+
+<!-- Ambient Background -->
+<div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+</div>
+
+<!-- Grid Overlay -->
+<div class="grid-overlay"></div>
+
+<!-- Main Container -->
+<div class="container">
+
+<!-- Header -->
+<div class="header" id="mainHeader">
+    <div class="logo">
+        <img src="images/logo.png" alt="JW Protection logo" style="height:96px;width:auto;display:block">
+    </div>
+
+    <h1 class="brand-name">JW PROTECTION</h1>
+    <p class="tagline">Professional Security Services</p>
+</div>
+
+<!-- Menu Grid -->
+<div class="menu-grid" id="menuGrid">
+    <div class="menu-item initial-load" data-section="introduction">
+        <div class="menu-badge">IN</div>
+        <div class="menu-title">Introduction</div>
+    </div>
+    <div class="menu-item initial-load" data-section="services">
+        <div class="menu-badge">SV</div>
+        <div class="menu-title">Services</div>
+    </div>
+    <div class="menu-item initial-load" data-section="gallery">
+        <div class="menu-badge">CL</div>
+        <div class="menu-title">Clients</div>
+    </div>
+    <div class="menu-item initial-load" data-section="testimonials">
+        <div class="menu-badge">FB</div>
+        <div class="menu-title">Feedback</div>
+    </div>
+    <div class="menu-item initial-load" data-section="about">
+        <div class="menu-badge">AB</div>
+        <div class="menu-title">About</div>
+    </div>
+    <div class="menu-item initial-load" data-section="contact">
+        <div class="menu-badge">CT</div>
+        <div class="menu-title">Contact</div>
+    </div>
+</div>
+
+<!-- ================= CONTENT ================= -->
+<div id="contentArea">
+
+<!-- INTRODUCTION -->
+<div class="content-section" id="introduction">
+<button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+<div class="intro-hero">
+    <div class="intro-hero-content">
+        <span class="intro-badge">Est. 2023</span>
+        <h1 class="intro-headline">
+            Trusted<br><span>Security Solutions</span>
+        </h1>
+        <p class="intro-subtext">
+            JW Protection Sdn. Bhd. ialah syarikat kawalan keselamatan berlesen KDN
+            yang menyediakan perkhidmatan keselamatan profesional untuk
+            premis kerajaan, komersial dan kediaman.
+        </p>
+    </div>
+</div>
+
+<div class="intro-metrics">
+    <div class="metric-item">
+        <span class="metric-value" data-target="100">0</span>
+        <span class="metric-label">Security Assignments</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+        <span class="metric-value" data-target="24">0</span>
+        <span class="metric-label">Hour Monitoring</span>
+    </div>
+    <div class="metric-divider"></div>
+    <div class="metric-item">
+        <span class="metric-value" data-target="100">0</span>
+        <span class="metric-label">% Compliance KDN</span>
+    </div>
+</div>
+</div>
+
+<!-- SERVICES -->
+<div class="content-section" id="services">
+<button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+<div class="section-header">
+    <h2 class="section-title">Our Services</h2>
+    <p class="section-subtitle">Perkhidmatan Keselamatan Berlesen</p>
+</div>
+
+<div class="tabs-container">
+<div class="tab-buttons">
+    <button class="tab-btn active" onclick="switchTab(this,'development')">Security</button>
+    <button class="tab-btn" onclick="switchTab(this,'design')">Rondaan</button>
+    <button class="tab-btn" onclick="switchTab(this,'consulting')">Consulting</button>
+    <button class="tab-btn" onclick="switchTab(this,'support')">Support</button>
+</div>
+
+<div class="tab-content">
+<div class="tab-pane active" id="development">
+    <div class="services-list">
+        <div class="service-row">
+            <div class="service-row-content">
+                <h4>Static Guard Services</h4>
+                <p>Pengawal keselamatan statik berlesen KDN.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane" id="design">
+    <div class="services-list">
+        <div class="service-row">
+            <div class="service-row-content">
+                <h4>Mobile Patrol</h4>
+                <p>Rondaan berkala dan pemantauan kawasan.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane" id="consulting">
+    <div class="services-list">
+        <div class="service-row">
+            <div class="service-row-content">
+                <h4>Security Advisory</h4>
+                <p>Khidmat nasihat keselamatan profesional.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tab-pane" id="support">
+    <div class="services-list">
+        <div class="service-row">
+            <div class="service-row-content">
+                <h4>24/7 Operations</h4>
+                <p>Sokongan operasi dan tindak balas pantas.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- GALLERY / CLIENTS -->
+<div class="content-section" id="gallery">
+<button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+<div class="section-header">
+    <h2 class="section-title">Clients & Operations</h2>
+    <p class="section-subtitle">Premis Yang Dilindungi</p>
+</div>
+
+<div class="filter-buttons">
+    <button class="filter-btn active" onclick="filterGallery('all',this)">All</button>
+    <button class="filter-btn" onclick="filterGallery('web',this)">Government</button>
+    <button class="filter-btn" onclick="filterGallery('mobile',this)">Commercial</button>
+    <button class="filter-btn" onclick="filterGallery('branding',this)">Residential</button>
+</div>
+
+<div class="gallery-grid">
+    <div class="gallery-item" data-category="web">
+        <img src="images/managed-service.jpg">
+        <div class="gallery-overlay">
+            <h4>Premis Kerajaan</h4>
+            <p>Berlesen KDN</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="mobile">
+        <img src="images/coding-screen.jpg">
+        <div class="gallery-overlay">
+            <h4>Bangunan Komersial</h4>
+            <p>Pengawal Statik</p>
+        </div>
+    </div>
+
+    <div class="gallery-item" data-category="branding">
+        <img src="images/about-our-team.jpg">
+        <div class="gallery-overlay">
+            <h4>Kawasan Perumahan</h4>
+            <p>Rondaan Berkala</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- ABOUT -->
+<!-- TESTIMONIALS / FEEDBACK -->
+<div class="content-section" id="testimonials">
+    <button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+    <div class="section-header">
+        <h2 class="section-title">Feedback</h2>
+        <p class="section-subtitle">Apa pelanggan kami kata</p>
+    </div>
+
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <p class="testimonial-text">“Perkhidmatan yang sangat profesional — respons pantas dan kawalan rapi. Sangat disyorkan.”</p>
+            <div class="testimonial-meta">Ahmad A., Pengurus Operasi</div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">“Pengawal yang berdisiplin dan latihan yang kemas. Kami berpuas hati dengan tahap keselamatan.”</p>
+            <div class="testimonial-meta">Siti R., Pengurus Kompleks</div>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">“Perkhidmatan rondaan 24/7 mereka memberi ketenangan fikiran kepada penghuni dan penyelia.”</p>
+            <div class="testimonial-meta">Lim C., Pengurus Aset</div>
+        </div>
+    </div>
+</div>
+<div class="content-section" id="about">
+<button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+<div class="section-header">
+    <h2 class="section-title">About Us</h2>
+    <p class="section-subtitle">JW Protection Sdn Bhd</p>
+</div>
+
+<div class="about-grid">
+    <div class="about-bio">
+        <p>Ditubuhkan pada 23 Ogos 2023, JW Protection Sdn. Bhd. adalah sebuah syarikat keselamatan berlesen yang memberi fokus kepada kualiti perkhidmatan dan pematuhan undang-undang. Kami menyediakan penyelesaian keselamatan untuk premis kerajaan, komersial, dan kediaman dengan pendekatan berasaskan risiko dan latihan berterusan kepada kakitangan kami.</p>
+
+        <p><strong>Misi:</strong> Menyediakan perkhidmatan keselamatan yang boleh dipercayai, beretika dan proaktif untuk melindungi aset dan orang ramai.</p>
+
+        <p><strong>Visi:</strong> Menjadi rakan keselamatan pilihan dengan standard operasi terbaik dan inovasi dalam kawalan keselamatan.</p>
+
+        <p><strong>Perkhidmatan Utama:</strong></p>
+        <ul class="about-list">
+            <li>Static Guard Services — Pengawal berlesen dan terlatih</li>
+            <li>Mobile Patrol — Rondaan berkala dan pemantauan</li>
+            <li>Security Advisory — Penilaian risiko dan perancangan keselamatan</li>
+            <li>24/7 Operations — Sokongan operasi dan tindak balas kecemasan</li>
+        </ul>
+    </div>
+
+    <aside class="about-credentials">
+        <h4>Lesen &amp; Pematuhan</h4>
+        <ul class="about-list">
+            <li>Berlesen di bawah Akta Ejen Persendirian (KDN)</li>
+            <li>Kakitangan terlatih &amp; diselia</li>
+            <li>Insurans profesional dan kepatuhan SOP</li>
+        </ul>
+
+        <h4>Hubungi Kami</h4>
+        <p style="margin:0;color:#c7cbd0">Untuk sebarang pertanyaan korporat atau permintaan sebut harga, hubungi kami atau layari seksyen Contact.</p>
+        <a class="about-cta" href="javascript:showSection('contact')">
+    Hubungi Kami
+</a>
+
+    </aside>
+</div>
+</div>
+
+<!-- CONTACT -->
+<div class="content-section" id="contact">
+<button class="back-btn" onclick="backToMenu()">← Back to Menu</button>
+
+<div class="section-header">
+    <h2 class="section-title">Contact Us</h2>
+</div>
+
+<div class="contact-map" aria-label="Map showing JW Protection address">
+    <iframe
+        src="https://www.google.com/maps?q=No.23-G,+Jalan+Prima+Meru+1,+Arena+Prima+Meru,+30020+Ipoh,+Perak&output=embed"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+<p style="text-align:center">
+No.23-G, Jalan Prima Meru 1, Arena Prima Meru,<br>
+30020 Ipoh (U), Perak<br><br>
+📧 main@jwprotection.com
+</p>
+</div>
+
+</div>
+
+<footer class="footer" id="mainFooter">
+    <p>© 2025 JW Protection Sdn Bhd</p>
+</footer>
+
+</div>
+
+<!-- ORIGINAL JS -->
+<script src="templatemo-nexa-scripts.js"></script>
+
+<!-- Smooth-scroll for About CTA -->
+<script>
+    (function(){
+        function handleAboutCTAClick(e){
+            const btn = e.target.closest('.about-cta[href^="#"]');
+            if(!btn) return;
+            e.preventDefault();
+            const href = btn.getAttribute('href');
+            const target = document.querySelector(href);
+            if(!target) return;
+            target.scrollIntoView({behavior:'smooth', block:'start'});
+            target.setAttribute('tabindex','-1');
+            try{ target.focus({preventScroll:true}); }catch(err){ target.focus(); }
+            setTimeout(()=>{ target.removeAttribute('tabindex'); }, 1200);
+        }
+        document.addEventListener('click', handleAboutCTAClick);
+    })();
+</script>
+
+</body>
+</html>
